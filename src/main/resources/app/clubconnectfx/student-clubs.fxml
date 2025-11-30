@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="app.clubconnectfx.StudentClubsController"
+            prefWidth="900" prefHeight="600"
+            style="-fx-background-color: #0D0D16;">
+
+    <!-- LEFT: Club List -->
+    <left>
+        <VBox spacing="15" style="-fx-background-color:#1A1A2E; -fx-padding:20;">
+            <Label text="Browse Clubs"
+                   style="-fx-text-fill:#BB86FC; -fx-font-size:22px; -fx-font-weight:bold;" />
+
+            <HBox spacing="10">
+                <TextField fx:id="searchField" promptText="Search clubs..."
+                           style="-fx-background-color:#1F1B24; -fx-text-fill:white;
+                                  -fx-background-radius:8; -fx-padding:8;" />
+                <Button text="Search" onAction="#searchClubs"
+                        style="-fx-background-color:#7C4DFF; -fx-text-fill:white;
+                               -fx-background-radius:8;" />
+            </HBox>
+
+            <ListView fx:id="clubList"
+                      style="-fx-background-color:#141421; -fx-cell-size:40;
+                             -fx-text-fill:white;"
+                      VBox.vgrow="ALWAYS" />
+        </VBox>
+    </left>
+
+    <!-- CENTER: Club Details -->
+    <center>
+        <VBox spacing="15" style="-fx-padding:20;">
+            <Label text="Club Details"
+                   style="-fx-text-fill:#BB86FC; -fx-font-size:22px; -fx-font-weight:bold;" />
+
+            <TextArea fx:id="detailsArea"
+                      editable="false"
+                      wrapText="true"
+                      style="-fx-background-color:#1A1A2E; -fx-text-fill:white;
+                             -fx-background-radius:12; -fx-padding:14;"
+                      VBox.vgrow="ALWAYS" />
+
+            <Button text="Request Membership"
+                    onAction="#sendJoinRequest"
+                    style="-fx-background-color: linear-gradient(to right,#7C4DFF,#9D68FF);
+                           -fx-text-fill:white; -fx-font-weight:bold; -fx-font-size:16px;
+                           -fx-background-radius:12; -fx-padding:12 18;" />
+        </VBox>
+    </center>
+
+</BorderPane>

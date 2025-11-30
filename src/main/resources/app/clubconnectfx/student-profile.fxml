@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="app.clubconnectfx.StudentProfileController"
+      spacing="20"
+      style="-fx-background-color:#0D0D16; -fx-padding:30;">
+
+    <Label text="My Profile"
+           style="-fx-text-fill:#BB86FC; -fx-font-size:28px; -fx-font-weight:bold;" />
+
+    <VBox spacing="15"
+          style="-fx-background-color:#1A1A2E; -fx-background-radius:15;
+                 -fx-padding:25; -fx-effect:dropshadow(gaussian, rgba(124,77,255,0.3),20,0.2,0,0);">
+
+        <HBox spacing="10">
+            <Label text="Full Name:" style="-fx-text-fill:#8B8B9F; -fx-font-size:16px;" />
+            <Label fx:id="lblName" style="-fx-text-fill:white; -fx-font-size:16px;" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Email:" style="-fx-text-fill:#8B8B9F; -fx-font-size:16px;" />
+            <Label fx:id="lblEmail" style="-fx-text-fill:white; -fx-font-size:16px;" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Department:" style="-fx-text-fill:#8B8B9F; -fx-font-size:16px;" />
+            <Label fx:id="lblDepartment" style="-fx-text-fill:white; -fx-font-size:16px;" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Semester:" style="-fx-text-fill:#8B8B9F; -fx-font-size:16px;" />
+            <Label fx:id="lblSemester" style="-fx-text-fill:white; -fx-font-size:16px;" />
+        </HBox>
+    </VBox>
+
+</VBox>

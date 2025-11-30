@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="app.clubconnectfx.AdminEventsController"
+      spacing="15"
+      style="-fx-background-color: transparent; -fx-padding:20;">
+
+    <Label text="Manage Events"
+           style="-fx-text-fill:#BB86FC; -fx-font-size:24px; -fx-font-weight:bold;"/>
+
+    <TableView fx:id="eventsTable" style="-fx-background-color:#141421;">
+        <columns>
+            <TableColumn fx:id="colId" text="ID" prefWidth="50"/>
+            <TableColumn fx:id="colName" text="Name" prefWidth="160"/>
+            <TableColumn fx:id="colStart" text="Start" prefWidth="150"/>
+            <TableColumn fx:id="colEnd" text="End" prefWidth="150"/>
+            <TableColumn fx:id="colVenue" text="Venue" prefWidth="140"/>
+            <TableColumn fx:id="colCap" text="Capacity" prefWidth="80"/>
+            <TableColumn fx:id="colReg" text="Registered" prefWidth="90"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="10">
+        <Button text="Create Event" onAction="#openCreateDialog"
+                style="-fx-background-color:#7C4DFF; -fx-text-fill:white;
+                       -fx-background-radius:10; -fx-padding:8 16;"/>
+        <Button text="Delete Selected" onAction="#deleteSelected"
+                style="-fx-background-color:#ff5555; -fx-text-fill:white;
+                       -fx-background-radius:10; -fx-padding:8 16;"/>
+    </HBox>
+
+</VBox>

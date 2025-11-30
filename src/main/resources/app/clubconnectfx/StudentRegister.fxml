@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      spacing="15" alignment="CENTER_LEFT">
+
+    <TextField fx:id="sUsername" promptText="Username" prefHeight="40"
+               style="-fx-background-color:#1F1B24; -fx-text-fill:white;
+                      -fx-background-radius:10;"/>
+
+    <PasswordField fx:id="sPassword" promptText="Password" prefHeight="40"
+                   style="-fx-background-color:#1F1B24; -fx-text-fill:white;
+                          -fx-background-radius:10;"/>
+
+    <TextField fx:id="sName" promptText="Full Name" prefHeight="40"
+               style="-fx-background-color:#1F1B24; -fx-text-fill:white;"/>
+
+    <TextField fx:id="sEmail" promptText="Email" prefHeight="40"
+               style="-fx-background-color:#1F1B24; -fx-text-fill:white;"/>
+
+    <TextField fx:id="sDepartment" promptText="Department" prefHeight="40"
+               style="-fx-background-color:#1F1B24; -fx-text-fill:white;"/>
+
+    <TextField fx:id="sSemester" promptText="Semester (1-8)" prefHeight="40"
+               style="-fx-background-color:#1F1B24; -fx-text-fill:white;"/>
+</VBox>

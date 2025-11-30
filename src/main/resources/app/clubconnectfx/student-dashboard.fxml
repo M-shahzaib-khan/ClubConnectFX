@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="app.clubconnectfx.StudentDashboardController"
+            prefWidth="1100" prefHeight="680"
+            style="-fx-background-color: linear-gradient(to bottom right, #0a0a0a, #1a1a2e);">
+
+    <!-- SIDEBAR -->
+    <left>
+        <VBox spacing="20" alignment="TOP_CENTER"
+              style="-fx-background-color: rgba(25,25,40,0.9);
+                     -fx-padding: 30;
+                     -fx-effect: dropshadow(gaussian, rgba(124,77,255,0.35), 25, 0.3, 0, 0);"
+              prefWidth="240">
+
+            <Label text="STUDENT"
+                   style="-fx-text-fill: #BB86FC; -fx-font-size: 26px; -fx-font-weight: bold;"/>
+
+            <Button text="Browse Clubs"      fx:id="btnClubs"
+                    onAction="#openClubs"
+                    style="-fx-background-color: transparent;
+                           -fx-text-fill: white; -fx-font-size: 16px;"/>
+
+            <Button text="Events"            fx:id="btnEvents"
+                    onAction="#openEvents"
+                    style="-fx-background-color: transparent;
+                           -fx-text-fill: white; -fx-font-size: 16px;"/>
+
+            <Button text="My Registrations"  fx:id="btnMyReg"
+                    onAction="#openMyRegistrations"
+                    style="-fx-background-color: transparent;
+                           -fx-text-fill: white; -fx-font-size: 16px;"/>
+
+            <Button text="Notifications"     fx:id="btnNotifications"
+                    onAction="#openNotifications"
+                    style="-fx-background-color: transparent;
+                           -fx-text-fill: white; -fx-font-size: 16px;"/>
+
+            <Button text="Profile"           fx:id="btnProfile"
+                    onAction="#openProfile"
+                    style="-fx-background-color: transparent;
+                           -fx-text-fill: white; -fx-font-size: 16px;"/>
+
+            <Separator prefWidth="180"/>
+
+            <Button text="Logout"
+                    onAction="#logout"
+                    style="-fx-background-color: linear-gradient(to right, #7C4DFF, #9D68FF);
+                           -fx-text-fill: white; -fx-font-size: 16px;
+                           -fx-background-radius: 10; -fx-padding: 10 20;"/>
+        </VBox>
+    </left>
+
+    <!-- CONTENT AREA -->
+    <center>
+        <StackPane fx:id="contentArea"
+                   style="-fx-padding: 25;">
+            <!-- Default loaded page -->
+            <Label text="Welcome!"
+                   style="-fx-text-fill: white; -fx-font-size: 28px;"/>
+        </StackPane>
+    </center>
+
+</BorderPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="app.clubconnectfx.StudentNotificationsController"
+      spacing="20"
+      style="-fx-background-color:#0D0D16; -fx-padding:30;">
+
+    <Label text="Notifications"
+           style="-fx-text-fill:#BB86FC; -fx-font-size:28px; -fx-font-weight:bold;" />
+
+    <TableView fx:id="notifTable"
+               style="-fx-background-color:#141421;">
+        <columns>
+            <TableColumn fx:id="colMessage" text="Message" prefWidth="380"/>
+            <TableColumn fx:id="colTime" text="Time" prefWidth="160"/>
+            <TableColumn fx:id="colStatus" text="Status" prefWidth="120"/>
+        </columns>
+    </TableView>
+
+    <Button text="Mark All as Read"
+            onAction="#markAllAsRead"
+            style="-fx-background-color: linear-gradient(to right,#7C4DFF,#9D68FF);
+                   -fx-text-fill:white; -fx-font-size:16px;
+                   -fx-background-radius:12; -fx-padding:12 25;"/>
+</VBox>

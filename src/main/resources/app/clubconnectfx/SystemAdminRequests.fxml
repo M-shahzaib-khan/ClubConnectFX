@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="20" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="app.clubconnectfx.SystemAdminRequestsController"
+      style="-fx-padding:20; -fx-background-color:#0D0D16;">
+
+    <Label text="Pending Club Admin Requests"
+           style="-fx-text-fill:#BB86FC; -fx-font-size:26px; -fx-font-weight:bold;" />
+
+    <TableView fx:id="reqTable" style="-fx-background-color:#1A1A2E;">
+        <columns>
+            <TableColumn fx:id="colId" text="Req ID" prefWidth="80"/>
+            <TableColumn fx:id="colUser" text="Username" prefWidth="140"/>
+            <TableColumn fx:id="colName" text="Full Name" prefWidth="180"/>
+            <TableColumn fx:id="colEmail" text="Email" prefWidth="200"/>
+            <TableColumn fx:id="colClub" text="Club Name" prefWidth="160"/>
+            <TableColumn fx:id="colDesc" text="Description" prefWidth="260"/>
+            <TableColumn fx:id="colTime" text="Requested At" prefWidth="180"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="20">
+        <Button text="Approve"
+                onAction="#approveRequest"
+                style="-fx-background-color:linear-gradient(to right,#7C4DFF,#9D68FF);
+                       -fx-text-fill:white; -fx-font-size:16px; -fx-padding:12 20;
+                       -fx-background-radius:12;" />
+
+        <Button text="Reject"
+                onAction="#rejectRequest"
+                style="-fx-background-color:linear-gradient(to right,#FF5370,#FF869A);
+                       -fx-text-fill:white; -fx-font-size:16px; -fx-padding:12 20;
+                       -fx-background-radius:12;" />
+    </HBox>
+
+</VBox>

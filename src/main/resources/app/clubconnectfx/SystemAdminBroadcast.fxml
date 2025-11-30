@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="20" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="app.clubconnectfx.SystemAdminBroadcastController"
+      style="-fx-background-color:#0D0D16; -fx-padding:20;">
+
+    <Label text="Broadcast Message"
+           style="-fx-text-fill:#BB86FC; -fx-font-size:26px; -fx-font-weight:bold;" />
+
+    <TextArea fx:id="messageArea"
+              promptText="Write a message to send to all users..."
+              style="-fx-background-color:#1A1A2E; -fx-text-fill:white;
+                     -fx-padding:15; -fx-background-radius:12;"
+              prefHeight="300"/>
+
+    <Button text="Send Broadcast"
+            onAction="#sendBroadcast"
+            style="-fx-background-color:linear-gradient(to right,#7C4DFF,#9D68FF);
+                   -fx-text-fill:white; -fx-font-size:16px; -fx-font-weight:bold;
+                   -fx-background-radius:12; -fx-padding:12 20;"/>
+
+</VBox>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="app.clubconnectfx.SystemAdminDashboardController"
+            prefWidth="900" prefHeight="600"
+            style="-fx-background-color:#0D0D16;">
+
+    <!-- LEFT SIDEBAR -->
+    <left>
+        <VBox spacing="15" style="-fx-background-color:#1A1A2E; -fx-padding:20; -fx-pref-width:220;">
+
+            <Label text="System Admin"
+                   style="-fx-text-fill:#BB86FC; -fx-font-size:26px; -fx-font-weight:bold;" />
+
+            <Separator/>
+
+            <Button text="Dashboard"      onAction="#loadHome"         styleClass="menu-btn"/>
+            <Button text="Clubs"          onAction="#loadClubs"        styleClass="menu-btn"/>
+            <Button text="Students"       onAction="#loadStudents"     styleClass="menu-btn"/>
+            <Button text="Club Admins"    onAction="#loadAdmins"       styleClass="menu-btn"/>
+            <Button text="Events"         onAction="#loadEvents"       styleClass="menu-btn"/>
+            <Button text="Broadcast"      onAction="#loadBroadcast"    styleClass="menu-btn"/>
+            <Button text="Admin Requests" onAction="#loadRequests"     styleClass="menu-btn"/>
+
+            <VBox VBox.vgrow="ALWAYS"/>
+
+            <Button text="Logout" onAction="#logout"
+                    style="-fx-background-color:#FF5370; -fx-text-fill:white;
+                           -fx-font-weight:bold; -fx-background-radius:10;"/>
+
+        </VBox>
+    </left>
+
+    <!-- MAIN CONTENT AREA -->
+    <center>
+        <StackPane fx:id="contentArea" style="-fx-padding:20;"/>
+    </center>
+
+</BorderPane>

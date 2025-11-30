@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="20" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="app.clubconnectfx.SystemAdminStudentsController"
+      style="-fx-padding:20; -fx-background-color:#0D0D16;">
+
+    <Label text="Manage Students"
+           style="-fx-text-fill:#BB86FC; -fx-font-size:26px; -fx-font-weight:bold;" />
+
+    <TableView fx:id="studentTable" style="-fx-background-color:#1A1A2E;">
+        <columns>
+            <TableColumn fx:id="colId" text="ID" prefWidth="80" />
+            <TableColumn fx:id="colName" text="Name" prefWidth="160" />
+            <TableColumn fx:id="colEmail" text="Email" prefWidth="180" />
+            <TableColumn fx:id="colDept" text="Department" prefWidth="140" />
+            <TableColumn fx:id="colSem" text="Semester" prefWidth="100" />
+        </columns>
+    </TableView>
+
+    <Button text="Delete Selected Student"
+            onAction="#deleteStudent"
+            style="-fx-background-color:linear-gradient(to right,#FF5370,#FF869A);
+                   -fx-text-fill:white; -fx-font-weight:bold; -fx-padding:12 20;
+                   -fx-background-radius:12; -fx-font-size:16px;" />
+</VBox>

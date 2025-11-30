@@ -1,0 +1,12 @@
+.side-btn {
+    -fx-background-color: #1E1E2E;
+    -fx-text-fill: #C8C8DD;
+    -fx-font-size: 15px;
+    -fx-background-radius: 10;
+    -fx-padding: 10 20;
+}
+
+.side-btn:hover {
+    -fx-background-color: #7C4DFF;
+    -fx-text-fill: white;
+}

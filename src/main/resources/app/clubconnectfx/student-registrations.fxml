@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="app.clubconnectfx.StudentRegistrationsController"
+      spacing="20"
+      style="-fx-background-color:#0D0D16; -fx-padding:30;">
+
+    <Label text="My Event Registrations"
+           style="-fx-text-fill:#BB86FC; -fx-font-size:28px; -fx-font-weight:bold;" />
+
+    <TableView fx:id="regTable"
+               style="-fx-background-color:#141421;">
+        <columns>
+            <TableColumn fx:id="colEventId" text="ID" prefWidth="60"/>
+            <TableColumn fx:id="colName" text="Event" prefWidth="180"/>
+            <TableColumn fx:id="colStart" text="Start" prefWidth="120"/>
+            <TableColumn fx:id="colEnd" text="End" prefWidth="120"/>
+            <TableColumn fx:id="colVenue" text="Venue" prefWidth="160"/>
+        </columns>
+    </TableView>
+
+    <Button text="Cancel Registration"
+            onAction="#cancelRegistration"
+            style="-fx-background-color: linear-gradient(to right,#7C4DFF,#9D68FF);
+                   -fx-text-fill:white; -fx-font-size:16px;
+                   -fx-background-radius:12; -fx-padding:12 25;"/>
+</VBox>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      spacing="15" alignment="CENTER_LEFT">
+
+    <TextField fx:id="aUsername" promptText="Username" prefHeight="40"
+               style="-fx-background-color:#1F1B24; -fx-text-fill:white;"/>
+
+    <PasswordField fx:id="aPassword" promptText="Password" prefHeight="40"
+                   style="-fx-background-color:#1F1B24; -fx-text-fill:white;"/>
+
+    <TextField fx:id="aName" promptText="Full Name" prefHeight="40"
+               style="-fx-background-color:#1F1B24; -fx-text-fill:white;"/>
+
+    <TextField fx:id="aEmail" promptText="Email" prefHeight="40"
+               style="-fx-background-color:#1F1B24; -fx-text-fill:white;"/>
+
+    <TextField fx:id="aClubName" promptText="Club Name" prefHeight="40"
+               style="-fx-background-color:#1F1B24; -fx-text-fill:white;"/>
+
+    <TextField fx:id="aClubDesc" promptText="Club Description" prefHeight="40"
+               style="-fx-background-color:#1F1B24; -fx-text-fill:white;"/>
+</VBox>

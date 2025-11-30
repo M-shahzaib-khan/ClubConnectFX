@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      spacing="20"
+      style="-fx-padding:20;">
+
+    <Label text="Manage Users"
+           style="-fx-text-fill:#BB86FC; -fx-font-size:22px; -fx-font-weight:bold;" />
+
+    <TableView fx:id="usersTable">
+        <columns>
+            <TableColumn fx:id="colId" text="User ID" prefWidth="80"/>
+            <TableColumn fx:id="colUsername" text="Username" prefWidth="150"/>
+            <TableColumn fx:id="colRole" text="Role" prefWidth="120"/>
+            <TableColumn fx:id="colEmail" text="Email" prefWidth="200"/>
+        </columns>
+    </TableView>
+
+
+</VBox>

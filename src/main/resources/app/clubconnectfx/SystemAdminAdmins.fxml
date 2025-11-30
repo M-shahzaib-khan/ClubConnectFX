@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="20" xmlns:fx="httpfx"
+      fx:controller="app.clubconnectfx.SystemAdminAdminsController"
+      style="-fx-padding:20; -fx-background-color:#0D0D16;">
+
+    <Label text="Club Admins"
+           style="-fx-text-fill:#BB86FC; -fx-font-size:26px; -fx-font-weight:bold;" />
+
+    <TableView fx:id="adminTable" style="-fx-background-color:#1A1A2E;">
+        <columns>
+            <TableColumn fx:id="colId" text="Admin ID" prefWidth="90" />
+            <TableColumn fx:id="colUser" text="Username" prefWidth="160" />
+            <TableColumn fx:id="colName" text="Name" prefWidth="160" />
+            <TableColumn fx:id="colEmail" text="Email" prefWidth="200" />
+            <TableColumn fx:id="colClub" text="Managed Club ID" prefWidth="120" />
+        </columns>
+    </TableView>
+</VBox>

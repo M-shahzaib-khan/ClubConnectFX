@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           style="-fx-background-color:#0D0D16; -fx-padding:30;">
+
+    <VBox alignment="CENTER" spacing="20"
+          style="-fx-background-color:rgba(30,30,46,0.9);
+                 -fx-padding:60;
+                 -fx-background-radius:20;
+                 -fx-effect:dropshadow(gaussian, rgba(124,77,255,0.5), 25,0.4,0,0);">
+
+        <Label text="Welcome, System Admin!"
+               style="-fx-text-fill:linear-gradient(to right,#BB86FC,#7C4DFF);
+                      -fx-font-size:36px; -fx-font-weight:bold;" />
+
+        <Label text="Use the menu on the left to manage Clubs, Users, Events and Admin Requests."
+               style="-fx-text-fill:#A0A0B5; -fx-font-size:16px; -fx-alignment:center;" />
+
+    </VBox>
+
+</StackPane>

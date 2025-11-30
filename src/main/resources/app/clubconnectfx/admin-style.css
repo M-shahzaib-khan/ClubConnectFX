@@ -1,0 +1,12 @@
+.menu-btn {
+    -fx-background-color:#1F1B24;
+    -fx-text-fill:white;
+    -fx-font-size:15px;
+    -fx-background-radius:10;
+    -fx-pref-width:180;
+    -fx-padding:10 15;
+}
+
+.menu-btn:hover {
+    -fx-background-color:#7C4DFF;
+}
