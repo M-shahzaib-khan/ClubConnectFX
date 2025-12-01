@@ -110,12 +110,5 @@ public class StudentBL {
         return eventDAO.getEventsRegisteredByStudent(studentId);
     }
 
-//    public boolean cancelEvent(int eventId, int studentId) {
-//        boolean removed = registrationDAO.cancelRegistration(eventId, studentId);
-//        if (removed) {
-//            registrationDAO.promoteNextWaitlistedStudent(eventId);
-//        }
-//        return removed;
-//    }
 
 }

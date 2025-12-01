@@ -9,6 +9,7 @@
       spacing="20"
       style="-fx-background-color:#0D0D16; -fx-padding:30;">
 
+
     <Label text="Notifications"
            style="-fx-text-fill:#BB86FC; -fx-font-size:28px; -fx-font-weight:bold;" />
 

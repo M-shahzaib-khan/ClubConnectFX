@@ -87,7 +87,7 @@ public class SystemAdminBL {
                 req.username,
                 req.password,
                 "club_admin",
-                ""
+                req.email
         );
 
         if (newUserId == -1) return false;

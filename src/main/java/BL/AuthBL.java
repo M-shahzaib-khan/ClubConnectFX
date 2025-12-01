@@ -54,23 +54,5 @@ public class AuthBL {
         );
     }
 
-    // ---------------------------
-    // LOAD DASHBOARD
-    // ---------------------------
-    public Object loadUserDashboardData(User user) {
 
-        switch (user.getRole()) {
-            case "student":
-                return studentDAO.getStudentById(user.getUserId());
-
-            case "club_admin":
-                return clubAdminDAO.getManagedClubId(user.getUserId());
-
-            case "system_admin":
-                return "system_admin";
-
-            default:
-                return null;
-        }
-    }
 }
